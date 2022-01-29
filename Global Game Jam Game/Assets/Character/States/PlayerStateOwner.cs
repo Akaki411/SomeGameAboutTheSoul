@@ -15,10 +15,13 @@ public class PlayerStateOwner : PlayerState
     [SerializeField] private GameObject soul;
     
     private Rigidbody2D _rigidbody;
+    private Animator _animator;
     private float x;
+    private bool _isRight;
     public override void Init()
     {
         _rigidbody = player.gameObject.GetComponent<Rigidbody2D>();
+        _animator = player.gameObject.GetComponent<Animator>();
     }
     public override void Run()
     {
@@ -39,10 +42,32 @@ public class PlayerStateOwner : PlayerState
         }
         Move();
 
+        if (player._isGround && _animator.GetBool("isJump"))
+        {
+            _animator.SetBool("isJump", false);
+        }
+
+        if (!player._isGround && !_animator.GetBool("isJump"))
+        {
+            _animator.SetBool("isJump", true);
+        }
+
+        if (x > 0 && !_isRight)
+        {
+            Flip(true);
+        }
+
+        if (x < 0 && _isRight)
+        {
+            Flip(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.Tab) && player.isActive)
         {
             GameObject clone = Instantiate(soul, player.transform.position, Quaternion.Euler(0, 0, 0));
             CameraMove.singleton.NewPurpose(clone);
+            _animator.SetFloat("Run", 0);
+            _animator.SetBool("isJump", false);
             player.Hide(true);
         }
     }
@@ -52,10 +77,26 @@ public class PlayerStateOwner : PlayerState
     }
     private void Move()
     {
+        if (player._isGround)
+        {
+            _animator.SetFloat("Run", Mathf.Abs(x * _runFactor * 0.588f));
+        }
+        else if (!player._isGround && _animator.GetFloat("Run") != 0)
+        {
+            _animator.SetFloat("Run", 0);
+        }
         _rigidbody.velocity = new Vector2(dynamic.Evaluate(x) * _speed * _runFactor, _rigidbody.velocity.y);
     }
     private void Jump()
     {
         _rigidbody.AddForce(Vector2.up * _jumpforce, ForceMode2D.Impulse);
+    }
+
+    private void Flip(bool right)
+    {
+        _isRight = right;
+        Vector3 scale = player.transform.localScale;
+        scale.x *= -1;
+        player.transform.localScale = scale;
     }
 }
