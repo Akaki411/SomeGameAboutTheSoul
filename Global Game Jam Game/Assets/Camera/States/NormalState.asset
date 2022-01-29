@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17128bd5e2c84de44a073904c0c0eea7, type: 3}
   m_Name: NormalState
   m_EditorClassIdentifier: 
-  speed: 0.2
-  mouseSpeed: 0.08
-  size: 3
-  sizeSpeed: 0.2
-  offset: {x: 0, y: 1.4, z: -10}
+  speed: 0.05
+  size: 256
+  sizeSpeed: 0.1
+  offset: {x: 0, y: 1.68, z: -10}

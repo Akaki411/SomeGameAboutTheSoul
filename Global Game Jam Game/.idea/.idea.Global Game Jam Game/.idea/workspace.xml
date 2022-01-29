@@ -11,16 +11,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Character/States/PlayerStateHuman.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/States/Source/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/States/PlayerStateOwner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/Reach.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/States/PlayerStateHide.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/States/Source/EnemyStateManipulate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/States/Source/EnemyStateGuard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/States/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Soul/Soul.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Character/States/PlayerState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character/Character.cs" />
       <option value="$PROJECT_DIR$/Assets/Character/States/PlayerStateHuman.cs" />
+      <option value="$PROJECT_DIR$/Assets/Camera/States/Samples/CameraState.cs" />
       <option value="$PROJECT_DIR$/Assets/Camera/States/Samples/CameraStateNormal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character/States/PlayerStateHide.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enemy/Reach.cs" />
+      <option value="$PROJECT_DIR$/Assets/Soul/Soul.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enemy/States/Source/EnemyState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enemy/States/Source/EnemyStateGuard.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enemy/States/Source/EnemyStateManipulate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character/States/PlayerStateOwner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character/Character.cs" />
       <option value="$PROJECT_DIR$/Assets/Camera/CameraMove.cs" />
     </changedPaths>
   </component>
@@ -67,7 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643366274739</updated>
-      <workItem from="1643366282304" duration="3702000" />
+      <workItem from="1643366282304" duration="12467000" />
+      <workItem from="1643427459139" duration="9914000" />
     </task>
     <servers />
   </component>

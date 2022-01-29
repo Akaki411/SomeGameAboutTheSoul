@@ -10,5 +10,5 @@ public abstract class CameraState : ScriptableObject
 
     public abstract void Run();
 
-    public abstract void ChangeSize(float size);
+    public abstract void ChangeSize(int size);
 }
