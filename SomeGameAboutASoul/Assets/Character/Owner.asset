@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Owner
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpforce: 15
+  _jumpforce: 100
   dynamic:
     serializedVersion: 2
     m_Curve:
@@ -47,5 +47,5 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _runFactor: 1.8
+  _runFactor: 1
   soul: {fileID: 8073417044766527097, guid: 4a7351108c06e0f448fdacdcf13f2652, type: 3}
